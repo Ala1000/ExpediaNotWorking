@@ -13,7 +13,9 @@ To run the project, All you need is to make sure you have Java JDK 8, an IDE for
 
 You will also need to install the following jars:
 gson-2.2.2.jar (http://www.java2s.com/Code/Jar/g/Downloadgson222jar.htm)
+
 java-json.jar (http://www.java2s.com/Code/Jar/j/Downloadjavajsonjar.htm)
+
 junit-4.10.jar (https://sourceforge.net/projects/junit/)
 
 
