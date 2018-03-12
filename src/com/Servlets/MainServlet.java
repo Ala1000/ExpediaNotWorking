@@ -57,7 +57,7 @@ public class MainServlet extends HttpServlet {
         searchFilter.setMaxTotalRate(request.getParameter("maxTotalRate"));
         searchFilter.setHotelName(request.getParameter("hotelName"));
         if (!validateSearch()){
-            //If s
+            //If search is invalid, clear filters and print error message
             System.out.println("Wrong filters format, please recheck");
             offersToDisplay.clear();
         }
@@ -65,6 +65,7 @@ public class MainServlet extends HttpServlet {
             getSearchResults();
 
         }
+        //Pass objects after filtering to jsp
         request.getSession().setAttribute("offers",offersToDisplay);
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         if (dispatcher != null){
@@ -72,6 +73,7 @@ public class MainServlet extends HttpServlet {
         }
     }
 
+    //This method filters data based on user input filters values.
     private void getSearchResults() {
 
         if (searchFilter.getDestination().length()>0){
@@ -99,6 +101,7 @@ public class MainServlet extends HttpServlet {
         }
     }
 
+    //This method checks if user input data is valid
     private boolean validateSearch() {
 
          try {
@@ -152,6 +155,7 @@ public class MainServlet extends HttpServlet {
         }
     }
 
+    //This method reads Json data from URL, and gets objects from that Json.
     private void getFromJson() {
         try {
             URL expedia = new URL("https://offersvc.expedia.com/offers/v2/getOffers?scenario=deal-finder&page=foo&uid=foo&productType=Hotel");
