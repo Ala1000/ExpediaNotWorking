@@ -57,7 +57,7 @@ public class MainServlet extends HttpServlet {
         searchFilter.setMaxTotalRate(request.getParameter("maxTotalRate"));
         searchFilter.setHotelName(request.getParameter("hotelName"));
         if (!validateSearch()){
-            //If
+            //If s
             System.out.println("Wrong filters format, please recheck");
             offersToDisplay.clear();
         }
