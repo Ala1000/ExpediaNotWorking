@@ -4,7 +4,7 @@ A website that reads data from JSON file, and filters them based on user-input f
 
 ## Getting Started
 
-The website is deployed to: 
+The website is deployed to: https://expediahotels0.herokuapp.com/
 
 ### Prerequisites
 
@@ -29,8 +29,9 @@ All tests were passed.
 
 ## Deployment
 
-Website is deployed to Heroku and can be accessed via: 
+Website is deployed to Heroku and can be accessed via: https://expediahotels0.herokuapp.com/
 
 ## Issues 
 The application is very simple, and it focuses more on the backend.
+Had some problems deploying to Heroku,, will be working on it.
 
