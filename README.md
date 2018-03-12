@@ -8,10 +8,11 @@ The website is deployed to: https://expediahotels0.herokuapp.com/
 
 ### Prerequisites
 
-To run the project, All you need is to make sure you have Java JDK 8, an IDE for Java (preferably Intellij), and Tomcat9.0.0.M20 installed on your local machine.
+To run the project, All you need is to make sure you have Java JDK 8, an IDE for Java (preferably Intellij), maven-3, and Tomcat9.0.0.M20 installed on your local machine.
 
 
 You will also need to install the following jars:
+
 gson-2.2.2.jar (http://www.java2s.com/Code/Jar/g/Downloadgson222jar.htm)
 
 java-json.jar (http://www.java2s.com/Code/Jar/j/Downloadjavajsonjar.htm)
