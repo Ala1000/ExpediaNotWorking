@@ -3,6 +3,7 @@ package com.Expedia;
 
 /**
  * Created by User on 3/10/2018.
+ *A class represents Search filters
  */
 public class Search {
 
